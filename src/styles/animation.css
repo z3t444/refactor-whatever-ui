@@ -1,0 +1,19 @@
+.animate-date {
+    animation: date 5.2s ease-in-out infinite;
+  }
+  
+  @keyframes date {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(20px); }
+    100% { transform: translateX(0); }
+  }
+
+  .search-animate {
+    animation:  search 5.2s ease-in-out infinite;
+  }
+
+  @keyframes search {
+    0% { transform: translatey(0); }
+    50% { transform: translatey(20px); }
+    100% { transform: translatey(0); }
+  }
