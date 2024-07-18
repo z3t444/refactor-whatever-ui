@@ -9,30 +9,33 @@ import { GithubIcon } from "@/components/icons";
 import DefaultLayout from "@/layouts/default";
 import DataUtilsCard from "./utils/NameDesk";
 import AvailableUtils from "./utils/AvailableUtils";
-import HeadingBoxSearch from "./index/HeadingBoxSearch";
-import HeadingLandingBlog from "./index/HeadingLandingBlog";
-import HeadingBoxDate from "./index/headingBoxDate";
 import SearchComponents from "./index/SearchComponents";
-import HeadingAllComponents from "./index/HeadingAllComponents";
-import HeadingInvite from "./index/HeadingInvite";
 import HeroAsset from "./asset/Capture.png";
-import LaptopScreen from "./asset/laptopscreen.svg";
-import MobileScreen from "./asset/PhoneDesign.svg";
-import IdeaIcons from "./asset/Idea.svg";
-import DesignIcons from "./asset/Design.svg";
-import ContentLanding from "./asset/ContentLanding.svg";
-import HeadingLinkComponents from "./index/headingLinkComponents";
+
 import HeadingHelpDesk from "./index/HeadingHelpDesk";
 import HeadingStatusBarComponents from "./index/headingStatusBarComponents";
-import AllComponentsLayout from "./asset/AllComponentsLayout.svg";
+import HeadingLinkComponents from "./index/headingLinkComponents";
+import HeadingInvite from "./index/HeadingInvite";
+import HeadingBoxDate from "./index/headingBoxDate";
+import HeadingAllComponents from "./index/HeadingAllComponents";
+import HeadingBoxSearch from "./index/HeadingBoxSearch";
+import HeadingLandingBlog from "./index/HeadingLandingBlog";
+
+import LaptopScreen from "./asset/laptopscreen.svg";
+import MobileScreen from "./asset/PhoneDesign.svg";
 import StatusBarIcons from "./asset/StatusBar.svg";
 import SmartShare from "./asset/SmartInviteShare.svg";
 import HelpDeskButtonAsset from "./asset/HelpDeskButtonAsset.svg";
+import AllComponentsLayout from "./asset/AllComponentsLayout.svg";
 import Date from "./asset/date.svg";
+import IdeaIcons from "./asset/Idea.svg";
+import DesignIcons from "./asset/Design.svg";
+import ContentLanding from "./asset/ContentLanding.svg";
+import LinkComponents from "./asset/Link.svg";
+
 import "../styles/animation.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import LinkComponents from "./asset/Link.svg";
 import { Switch } from "@nextui-org/switch";
 AOS.init();
 
@@ -217,7 +220,7 @@ export default function IndexPage() {
               data-aos-duration="1400"
               className="dark:bg-gradient-to-br dark:from-[#1d1c20] dark:via-neutral-950 dark:to-black bg-gradient-to-br from-neutral-200 to-neutral-300 overflow-hidden rounded-3xl">
               <HeadingStatusBarComponents />
-              <img className="mt-10" src={StatusBarIcons}  />
+              <img className="mt-10" src={StatusBarIcons} />
             </div>
 
             <div
