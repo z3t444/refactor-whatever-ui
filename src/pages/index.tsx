@@ -32,6 +32,7 @@ import IdeaIcons from "./asset/Idea.svg";
 import DesignIcons from "./asset/Design.svg";
 import ContentLanding from "./asset/ContentLanding.svg";
 import LinkComponents from "./asset/Link.svg";
+import RainbowAsset from "./asset/rainbowAsset.svg";
 
 import "../styles/animation.css";
 import AOS from "aos";
@@ -238,6 +239,15 @@ export default function IndexPage() {
               <HeadingHelpDesk />
               <img src={HelpDeskButtonAsset} alt="" />
             </div>
+          </div>
+        </main>
+      </section>
+
+      <section>
+        {/* transformation landing to content desk */}
+        <main>
+          <div className="flex mt-24 justify-center">
+            <img src={RainbowAsset}width={300} />
           </div>
         </main>
       </section>
