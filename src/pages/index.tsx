@@ -31,8 +31,9 @@ import Date from "./asset/date.svg";
 import IdeaIcons from "./asset/Idea.svg";
 import DesignIcons from "./asset/Design.svg";
 import ContentLanding from "./asset/ContentLanding.svg";
-import LinkComponents from "./asset/Link.svg";
 import RainbowAsset from "./asset/rainbowAsset.svg";
+import LinkComponents from "./asset/Link.svg";
+import RainbowCircle from "./asset/rainbowcircle.svg";
 
 import "../styles/animation.css";
 import AOS from "aos";
@@ -246,9 +247,18 @@ export default function IndexPage() {
       <section>
         {/* transformation landing to content desk */}
         <main>
-          <div className="flex mt-24 justify-center">
-            <img src={RainbowAsset}width={300} />
+          <div className="flex mt-28 justify-center">
+            <img src={RainbowAsset} width={300} />
           </div>
+          <h1 className="text-6xl text-center -mt-32 font-bold">Automator</h1>
+          <h1 className="text-lg text-center mt-6 text-neutral-300 font-medoum">Automate design tasks in Figma with a single click.</h1>
+          {/* components Asset */}
+          <a className="flex justify-center mt-8" href="">
+            <button className="flex p-3 bg-[#424245] gap-3 rounded-3xl items-center">
+              <img src={RainbowCircle} className="w-6" alt="" />
+              <p>automator design</p>
+            </button>
+          </a>
         </main>
       </section>
     </DefaultLayout>
