@@ -124,24 +124,34 @@ export default function IndexPage() {
 
       <section>
         <main className="mt-24">
+          {/* heading  */}
           <h1 className="text-center text-xl font-semibold">Available Components kit</h1>
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 justify-center lg:justify-around mt-12">
-            <div title="forLeftFeature">
-              <div className="hidden lg:block">
-                <div data-aos="zoom-out" data-aos-duration="1500" className="flex -ml-14 lg:-ml-0  items-center">
-                  <img src={LaptopScreen} className="-rotate-6" alt="laptop Screen" width={440} />
-                  <img className="-ml-14 mt-2" src={MobileScreen} alt="Mobile Screen" width={120} />
+
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-10 justify-center lg:justify-around mt-12">
+              <div title="forLeftFeature">
+                {/* In Desktop */}
+                <div className="hidden lg:block">
+                  <div data-aos="zoom-out" data-aos-duration="1500" className="flex -ml-14 lg:-ml-0  items-center">
+                    <img src={LaptopScreen} className="-rotate-6" alt="laptop Screen" width={440} />
+                    <img className="-ml-14 mt-2" src={MobileScreen} alt="Mobile Screen" width={120} />
+                  </div>
                 </div>
-              </div>
-              <div className="block lg:hidden">
-                <div data-aos="zoom-out" data-aos-duration="1500" className="flex lg:-ml-0 items-center">
-                  <img src={LaptopScreen} className="-rotate-6" alt="laptop Screen" width={280} />
-                  <img className="-ml-14 mt-2" src={MobileScreen} alt="Mobile Screen" width={90} />
+
+                {/* in mobile */}
+                <div className="block lg:hidden">
+                  <div data-aos="zoom-out" data-aos-duration="1500" className="flex -ml-4 justify-center items-center">
+                    <img src={LaptopScreen} className="-rotate-6" alt="laptop Screen" width={280} />
+                    <img className="-ml-12 mt-2" src={MobileScreen} alt="Mobile Screen" width={80} />
+                  </div>
                 </div>
+
+                <li className="list-none"></li>
               </div>
-              <li className="list-none"></li>
+
+              {/* data Utils Text */}
+              <AvailableUtils />
             </div>
-            <AvailableUtils />
           </div>
         </main>
       </section>
