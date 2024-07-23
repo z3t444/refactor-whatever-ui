@@ -35,7 +35,7 @@ export const Navbar = () => {
           <Link className="flex justify-start items-center gap-1" color="foreground" href="/">
             {/* <Logo /> */}
             <p className="font-bold  text-xl uppercase tracking-tighter">Whatever</p>
-           </Link>
+          </Link>
         </NavbarBrand>
         <div className="hidden lg:flex gap-4 justify-start ml-2">
           {siteConfig.navItems.map((item) => (

@@ -165,7 +165,7 @@ export default function IndexPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-24">
             <div
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-duration="500"
               className="dark:bg-gradient-to-br dark:from-[#1d1c20] dark:via-neutral-950 dark:to-black bg-gradient-to-br from-neutral-200 to-neutral-300 rounded-3xl p-7">
               <HeadingBoxSearch />
@@ -175,7 +175,7 @@ export default function IndexPage() {
             </div>
 
             <div
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-duration="500"
               className="dark:bg-gradient-to-br dark:from-[#1d1c20] dark:via-neutral-950 dark:to-black bg-gradient-to-br from-neutral-200 to-neutral-300 rounded-3xl p-7">
               <HeadingBoxDate />
@@ -187,7 +187,7 @@ export default function IndexPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-5">
             <div
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-duration="1000"
               className="dark:bg-gradient-to-br overflow-hidden  dark:from-[#1d1c20] dark:via-neutral-950 dark:to-black bg-gradient-to-br from-neutral-200 to-neutral-300 rounded-3xl">
               <HeadingLandingBlog />
@@ -200,7 +200,7 @@ export default function IndexPage() {
             </div>
 
             <div
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-duration="1000"
               className="dark:bg-gradient-to-br dark:from-[#1d1c20] dark:via-neutral-950 dark:to-black bg-gradient-to-br from-neutral-200 to-neutral-300 overflow-hidden rounded-3xl">
               <HeadingAllComponents />
@@ -211,7 +211,7 @@ export default function IndexPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-5">
             <div
               data-aos="fade-up"
-              data-aos-duration="1000"
+              data-aos-duration="1200"
               className="dark:bg-gradient-to-br overflow-hidden  dark:from-[#1d1c20] dark:via-neutral-950 dark:to-black bg-gradient-to-br from-neutral-200 to-neutral-300 rounded-3xl">
               <HeadingLinkComponents />
               <img src={LinkComponents} />
@@ -250,11 +250,18 @@ export default function IndexPage() {
           <div className="flex mt-28 justify-center">
             <img src={RainbowAsset} width={300} />
           </div>
-          <h1 className="text-6xl text-center -mt-32 font-bold">Automator</h1>
-          <h1 className="text-lg text-center mt-6 text-neutral-300 font-medoum">Automate design tasks in Figma with a single click.</h1>
+
+          <div className="text-center -mt-28">
+            <h1 className={title({ class: "font-bold", size: "lg", position: "center" })}>
+              <span className="dark:text-neutral-200">Automator</span>
+            </h1>
+          </div>
+
+          <p className="text-lg text-center mt-6 text-neutral-300 font-medoum">Automate design tasks in Figma with a single click.</p>
+
           {/* components Asset */}
           <a className="flex justify-center mt-8" href="">
-            <button className="flex p-3 bg-[#424245] gap-3 rounded-3xl items-center">
+            <button className="flex p-3 bg-neutral-300 dark:bg-[#424245] gap-3 rounded-3xl items-center">
               <img src={RainbowCircle} className="w-6" alt="" />
               <p>automator design</p>
             </button>
