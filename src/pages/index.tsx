@@ -163,9 +163,11 @@ export default function IndexPage() {
             <div className="flex justify-center">
               <img src={IdeaIcons} alt="" width={150} />
             </div>
+
             <div className="text-6xl p-5 dark:-mt-14 text-center font-bold">Modern</div>
             <p className="dark:mt-3 text-center">The modern design that we provide.</p>
           </header>
+
           <a className="flex justify-center mt-7" href="">
             <Button radius="full">
               <img src={DesignIcons} alt="" />
@@ -267,7 +269,7 @@ export default function IndexPage() {
             </h1>
           </div>
 
-          <p className={subtitle({class: "text-center mt-5"})}>Automate design tasks in Figma with a single click.</p>
+          <p className={subtitle({ class: "text-center mt-5" })}>Automate design tasks in Figma with a single click.</p>
 
           {/* tranformation content */}
           {/* components Asset */}
