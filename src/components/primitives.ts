@@ -14,7 +14,7 @@ export const title = tv({
       white: "text-white"
     },
     size: {
-      litlesm : "text-sm lg:text-sm",
+      litlesm : "text-sm lg:text-lg",
       extrasm: "text-xl lg:text-2xl",
       sm: "text-3xl lg:text-4xl",
       md: "text-[2.3rem] lg:text-5xl leading-9",

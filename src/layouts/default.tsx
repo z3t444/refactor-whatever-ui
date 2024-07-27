@@ -2,7 +2,6 @@ import { Link } from "@nextui-org/link";
 import { Navbar } from "@/components/navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
-// ..
 AOS.init();
 
 export default function DefaultLayout({ children }: { children: React.ReactNode }) {

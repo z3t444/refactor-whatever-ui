@@ -202,7 +202,7 @@ export default function IndexPage() {
               className="dark:bg-gradient-to-br overflow-hidden  dark:from-[#1d1c20] dark:via-neutral-950 dark:to-black bg-gradient-to-br from-neutral-200 to-neutral-300 rounded-3xl">
               <HeadingLandingBlog />
               <div className="lg:mt-20 lg:scale-110 flex">
-                <ul className="flex justify-center items-center lg:gap-10">
+                <ul className="flex justify-center items-center gap-5 lg:gap-10">
                   <img src={ContentLanding} className="ml-5" width={200} alt="" />
                   <Switch defaultSelected color="default"></Switch>
                 </ul>
@@ -267,8 +267,9 @@ export default function IndexPage() {
             </h1>
           </div>
 
-          <p className="text-lg text-center mt-6 text-neutral-300 font-medoum">Automate design tasks in Figma with a single click.</p>
+          <p className={subtitle({class: "text-center mt-5"})}>Automate design tasks in Figma with a single click.</p>
 
+          {/* tranformation content */}
           {/* components Asset */}
           <a className="flex justify-center mt-8" href="">
             <button className="flex p-3 bg-neutral-300 dark:bg-[#424245] gap-3 rounded-3xl items-center">
@@ -276,6 +277,19 @@ export default function IndexPage() {
               <p>automator design</p>
             </button>
           </a>
+        </main>
+      </section>
+
+      <section>
+        <main className="mt-10">
+          <div className="dark:bg-gradient-to-br overflow-hidden p-5 dark:from-[#1d1c20] dark:via-neutral-950 dark:to-black bg-gradient-to-br from-neutral-200 to-neutral-300 rounded-3xl">
+            {/* for heading */}
+            <header>
+              <h1 className={title({ size: "litlesm" })}>Automate the busy work away</h1>
+              <p className={subtitle({})}>automator turns hours of long, ledious busy work into the single click.</p>
+            </header>
+            {/* content */}
+          </div>
         </main>
       </section>
     </DefaultLayout>
